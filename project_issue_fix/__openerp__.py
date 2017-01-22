@@ -19,29 +19,27 @@
 #
 ##############################################################################
 {
-    "name": "Project Task Activity",
-    'version': '8.0.0.3.0',
-    'category': 'Tools',
+    "name": "Project Issue Fix",
+    'version': '8.0.0.0.0',
+    'category': 'Project',
     'sequence': 14,
-    'author':  'ADHOC SA',
-    'website': 'www.adhoc.com.ar',
-    'license': 'AGPL-3',
     'summary': '',
     'description': """
-Project Task Activity
-=====================
-""",
-    'depends': [
-        'project',
+Project Issue Fix
+=================
+* Use same rule for employees as in task so that they can create issues on
+projects of type "followers only"
+    """,
+    'author': 'ADHOC SA',
+    'website': 'www.adhoc.com.ar',
+    'license': 'AGPL-3',
+    'images': [
     ],
-    'external_dependencies': {
-    },
+    'depends': [
+        'project_issue',
+    ],
     'data': [
-        'view/activities_menuitem.xml',
-        'view/project_view.xml',
-        'view/task_view.xml',
-        'security/ir.model.access.csv',
-        'security/project_security.xml',
+        'security/portal_security.xml'
     ],
     'demo': [
     ],
@@ -51,4 +49,3 @@ Project Task Activity
     'auto_install': False,
     'application': False,
 }
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

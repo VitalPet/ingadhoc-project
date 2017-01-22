@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    Copyright (C) 2015  ADHOC SA  (http://www.adhoc.com.ar)
-#    All Rights Reserved.
+#    Sistemas ADHOC - ADHOC SA
+#    https://launchpad.net/~sistemas-adhoc
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -18,30 +18,27 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
+
 {
-    "name": "Project Task Activity",
-    'version': '8.0.0.3.0',
-    'category': 'Tools',
+    'name': 'Project Duplicate Analytic Hierachy',
+    'version': '8.0.0.0.0',
+    'category': 'Projects & Services',
     'sequence': 14,
-    'author':  'ADHOC SA',
-    'website': 'www.adhoc.com.ar',
-    'license': 'AGPL-3',
     'summary': '',
     'description': """
-Project Task Activity
-=====================
-""",
+Project Duplicate Analytic Hierachy
+===================================
+When creating project from template, duplicate de analytic account hierachy
+as it is done when making copy of project
+    """,
+    'author': 'ADHOC SA',
+    'website': 'www.adhoc.com.ar',
+    'images': [
+    ],
     'depends': [
         'project',
     ],
-    'external_dependencies': {
-    },
     'data': [
-        'view/activities_menuitem.xml',
-        'view/project_view.xml',
-        'view/task_view.xml',
-        'security/ir.model.access.csv',
-        'security/project_security.xml',
     ],
     'demo': [
     ],
@@ -51,4 +48,3 @@ Project Task Activity
     'auto_install': False,
     'application': False,
 }
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
